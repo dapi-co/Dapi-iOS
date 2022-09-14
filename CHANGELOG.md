@@ -11,3 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Rewriting the iOS SDK in Swift in order to modernize the code base.
 - Officially support SPM 🎉.
 - Dapi pod now is using XCFramework.
+
+## 1.0.0-beta1 - 2022-9-14
+### Update
+- Remove `Start` func callback.
+- support MFA Multiple choices.
