@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "DapiSDK",
-            url: "https://github.com/dapi-co/Dapi-iOS/releases/download/3.0.0/DapiSDK.zip",
-            checksum: "b48b0a4da1ca23edeb3a18e5bc0b0a279fc811901478b0b1f7f6fe9c6b5f6c4b")
+            url: "https://github.com/dapi-co/Dapi-iOS/releases/download/1.0.0-beta/DapiSDK.zip",
+            checksum: "7d704e8cf1589133cf055bdd5ad2a3f94fc39405cf7b0bab2c5542f2665e366c")
     ]
 )

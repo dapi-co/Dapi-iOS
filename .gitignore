@@ -94,3 +94,5 @@ iOSInjectionProject/
 .swiftpm/
 
 DapiSDK.zip
+
+DapiSDK.xcframework/
