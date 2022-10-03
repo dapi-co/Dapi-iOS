@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "dapi-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dapi-co/Dapi-iOS",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7f272a027cde57729cfada73da153bf84737cc3f"
+      }
+    }
+  ],
+  "version" : 2
+}
