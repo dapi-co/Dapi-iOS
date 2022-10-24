@@ -85,6 +85,7 @@ extension ViewController{
                 sss.dateFormat = "yyyy-MM-dd"
                 Dapi.shared.accountTransactions(bankConnection: connection,
                                                 bankAccountID: response.accounts.first!.id,
+                                                type: .enriched,
                                                 from: sss.date(from: "2022-01-25")!,
                                                 to: sss.date(from: "2022-04-25")!) { results in
                     switch results {
@@ -114,6 +115,7 @@ extension ViewController{
                 sss.dateFormat = "yyyy-MM-dd"
                 Dapi.shared.cardTransactions(bankConnection: connection,
                                              cardID: response.cards.first!.id,
+                                             type: .enriched,
                                              from: sss.date(from: "2021-01-25")!,
                                              to: sss.date(from: "2021-04-25")!) { results in
                     switch results {

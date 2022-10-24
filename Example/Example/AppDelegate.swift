@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Dapi.shared.start(appKey: "43862a4e640420dabecaf5a63cad992db822b92908b800e9eba95e7624915409",
                           environment: .sandbox,
-                          clientID: "clientID")
+                          clientUserID: "clientID")
 
         let configurations  = DAPIConfigurations(countries: [.ae])
 

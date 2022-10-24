@@ -13,7 +13,6 @@
 		2AF061C628EAEBA1005DAAA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF061C428EAEBA1005DAAA5 /* Main.storyboard */; };
 		2AF061C828EAEBA5005DAAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF061C728EAEBA5005DAAA5 /* Assets.xcassets */; };
 		2AF061CB28EAEBA5005DAAA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF061C928EAEBA5005DAAA5 /* LaunchScreen.storyboard */; };
-		2AF061D428EAECC6005DAAA5 /* DapiSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2AF061D328EAECC6005DAAA5 /* DapiSDK */; };
 		2AF061D628EB09C4005DAAA5 /* ViewController+BankConnects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061D528EB09C4005DAAA5 /* ViewController+BankConnects.swift */; };
 		2AF061D828EB0A4F005DAAA5 /* ViewController+DataAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061D728EB0A4F005DAAA5 /* ViewController+DataAPIs.swift */; };
 		2AF061DA28EB0B69005DAAA5 /* ViewController+PaymentAPIs.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061D928EB0B69005DAAA5 /* ViewController+PaymentAPIs.swift.swift */; };
@@ -38,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AF061D428EAECC6005DAAA5 /* DapiSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +93,6 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				2AF061D328EAECC6005DAAA5 /* DapiSDK */,
 			);
 			productName = Example;
 			productReference = 2AF061BB28EAEBA1005DAAA5 /* Example.app */;
@@ -126,7 +123,6 @@
 			);
 			mainGroup = 2AF061B228EAEBA1005DAAA5;
 			packageReferences = (
-				2AF061D228EAECC6005DAAA5 /* XCRemoteSwiftPackageReference "Dapi-iOS" */,
 			);
 			productRefGroup = 2AF061BC28EAEBA1005DAAA5 /* Products */;
 			projectDirPath = "";
@@ -376,25 +372,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		2AF061D228EAECC6005DAAA5 /* XCRemoteSwiftPackageReference "Dapi-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dapi-co/Dapi-iOS";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2AF061D328EAECC6005DAAA5 /* DapiSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2AF061D228EAECC6005DAAA5 /* XCRemoteSwiftPackageReference "Dapi-iOS" */;
-			productName = DapiSDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2AF061B328EAEBA1005DAAA5 /* Project object */;
 }

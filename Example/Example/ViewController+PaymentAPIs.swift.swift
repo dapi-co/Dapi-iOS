@@ -23,10 +23,10 @@ extension ViewController {
         //                                  beneficiary: self.dapiBeneficiary,
         //                                  transferType: .normal)
         view.autoFlowDelegate = self
-        view.transferDidFailed = { error in
+        view.transferDidFail = { error in
             print(error)
         }
-        view.transferDidSuccess = { success in
+        view.transferDidSucceed = { success in
             print(success)
         }
         self.present(view, animated: true)

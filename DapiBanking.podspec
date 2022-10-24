@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'DapiBanking'
-    s.version           = '1.0.0'
+    s.version           = '1.1.0'
     s.summary           = 'Financial APIs to connect users bank accounts.'
     s.homepage          = 'https://dapi.com'
     s.author            = { 'Dapi' => 'dev@dapi.com' }
@@ -11,7 +11,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                  LICENSE
                }
     s.platform          = "ios", '13.0'
-    s.source		= { :http => 'https://github.com/dapi-co/Dapi-iOS/releases/download/1.0.0/DapiSDK.zip'}
+    s.source		= { :http => 'https://github.com/dapi-co/Dapi-iOS/releases/download/1.1.0/DapiSDK.zip'}
     s.vendored_frameworks = 'DapiSDK.xcframework'
     s.cocoapods_version = '>= 1.10.0'
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }

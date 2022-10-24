@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.1.0 - 2022-10-21
+### Added
+- Add transactions types
+    - default: transaction  won't include category and brandDetails
+    - enriched: Each transaction object will have category and brandDetails properties.
+    - categorized: Each transaction object will have a category property.
+
 ## 1.0.0 - 2022-10-17
 ### Added
 - Rewriting the iOS SDK in Swift in order to modernize the code base.
