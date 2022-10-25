@@ -78,27 +78,42 @@ extension ViewController{
             showMessage("Please select bank connection first to be used in this API")
             return
         }
-        Dapi.shared.bankAccounts(bankConnection: connection) { results in
-            switch results {
-            case .success(let response):
-                let sss = DateFormatter()
-                sss.dateFormat = "yyyy-MM-dd"
-                Dapi.shared.accountTransactions(bankConnection: connection,
-                                                bankAccountID: response.accounts.first!.id,
-                                                type: .enriched,
-                                                from: sss.date(from: "2022-01-25")!,
-                                                to: sss.date(from: "2022-04-25")!) { results in
+        let month  = 6
+        Dapi.shared.accountMetadata(bankConnection: connection) { results in
+            let today = Date()
+            var startDate = Calendar.current.date(byAdding: .month, value: -month, to: today)
+            if let accountMetadataResponse = try? results.get(),
+               let transactionRange = accountMetadataResponse.accountsMetadata.transactionRange {
+                let unit = transactionRange.unit
+                let value = transactionRange.value
+                let calendarUnite: Calendar.Component = unit == "months" ? .month : unit == "days" ? .day :.year
+                var firstDayInRange = Calendar.current.date(byAdding: calendarUnite, value: Int(-value), to: today)
+                if firstDayInRange! > startDate! {
+                    startDate = firstDayInRange
+                }
+                Dapi.shared.bankAccounts(bankConnection: connection) { results in
                     switch results {
                     case .success(let response):
-                        print(response)
+                        Dapi.shared.accountTransactions(bankConnection: connection,
+                                                        bankAccountID: response.accounts.first!.id,
+                                                        type: .enriched,
+                                                        from: startDate!,
+                                                        to: today) { results in
+                            switch results {
+                            case .success(let response):
+                                print(response)
+                            case .failure(let error):
+                                print(error.dapiErrorMessage)
+                            }
+
+                        }
                     case .failure(let error):
                         print(error.dapiErrorMessage)
                     }
-
                 }
-            case .failure(let error):
-                print(error.dapiErrorMessage)
+
             }
+
         }
 
     }
@@ -115,7 +130,6 @@ extension ViewController{
                 sss.dateFormat = "yyyy-MM-dd"
                 Dapi.shared.cardTransactions(bankConnection: connection,
                                              cardID: response.cards.first!.id,
-                                             type: .enriched,
                                              from: sss.date(from: "2021-01-25")!,
                                              to: sss.date(from: "2021-04-25")!) { results in
                     switch results {

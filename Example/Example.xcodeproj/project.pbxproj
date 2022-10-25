@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AC1F3522906AEA400F7F12C /* DapiSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC1F3512906AEA400F7F12C /* DapiSDK */; };
 		2AF061BF28EAEBA1005DAAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061BE28EAEBA1005DAAA5 /* AppDelegate.swift */; };
 		2AF061C128EAEBA1005DAAA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061C028EAEBA1005DAAA5 /* SceneDelegate.swift */; };
 		2AF061C328EAEBA1005DAAA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061C228EAEBA1005DAAA5 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC1F3522906AEA400F7F12C /* DapiSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
+				2AC1F3512906AEA400F7F12C /* DapiSDK */,
 			);
 			productName = Example;
 			productReference = 2AF061BB28EAEBA1005DAAA5 /* Example.app */;
@@ -123,6 +126,7 @@
 			);
 			mainGroup = 2AF061B228EAEBA1005DAAA5;
 			packageReferences = (
+				2AC1F3502906AEA400F7F12C /* XCRemoteSwiftPackageReference "Dapi-iOS" */,
 			);
 			productRefGroup = 2AF061BC28EAEBA1005DAAA5 /* Products */;
 			projectDirPath = "";
@@ -372,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AC1F3502906AEA400F7F12C /* XCRemoteSwiftPackageReference "Dapi-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dapi-co/Dapi-iOS";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AC1F3512906AEA400F7F12C /* DapiSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AC1F3502906AEA400F7F12C /* XCRemoteSwiftPackageReference "Dapi-iOS" */;
+			productName = DapiSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2AF061B328EAEBA1005DAAA5 /* Project object */;
 }

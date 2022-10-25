@@ -68,14 +68,28 @@
                                     <action selector="presentConnectLayer:" destination="XuN-vA-xp7" eventType="touchUpInside" id="9yw-AO-O3H"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-sT-lOC">
+                                <rect key="frame" x="67" y="545" width="280" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="avx-DP-4CB"/>
+                                    <constraint firstAttribute="height" constant="60" id="vyf-Kz-YlD"/>
+                                </constraints>
+                                <state key="normal" title="Connections APIs"/>
+                                <connections>
+                                    <segue destination="VPq-db-Mhv" kind="show" id="762-sY-26g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dmE-7W-hmc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jcr-KD-kUr" firstAttribute="top" secondItem="7YJ-NX-fCX" secondAttribute="bottom" constant="40" id="9iS-uz-Lcb"/>
                             <constraint firstItem="jcr-KD-kUr" firstAttribute="centerY" secondItem="dmE-7W-hmc" secondAttribute="centerY" id="Bi7-dB-f40"/>
+                            <constraint firstItem="K8c-sT-lOC" firstAttribute="top" secondItem="jcr-KD-kUr" secondAttribute="bottom" constant="40" id="G3x-EG-Z4E"/>
                             <constraint firstItem="7YJ-NX-fCX" firstAttribute="centerX" secondItem="j5Y-ao-wXf" secondAttribute="centerX" id="Gsh-3c-dZ4"/>
                             <constraint firstItem="7YJ-NX-fCX" firstAttribute="top" secondItem="HVp-MN-JBs" secondAttribute="bottom" constant="20" id="IP1-eH-UE2"/>
+                            <constraint firstItem="K8c-sT-lOC" firstAttribute="centerX" secondItem="j5Y-ao-wXf" secondAttribute="centerX" id="M3b-OT-jJo"/>
                             <constraint firstItem="jcr-KD-kUr" firstAttribute="centerX" secondItem="dmE-7W-hmc" secondAttribute="centerX" id="dkl-WD-Cky"/>
                             <constraint firstItem="jcr-KD-kUr" firstAttribute="leading" secondItem="dmE-7W-hmc" secondAttribute="leading" constant="10" id="fZj-ub-HTX"/>
                             <constraint firstItem="HVp-MN-JBs" firstAttribute="centerX" secondItem="7YJ-NX-fCX" secondAttribute="centerX" id="pP6-Jd-5aF"/>
@@ -274,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrT-Yr-DgJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="-38"/>
+            <point key="canvasLocation" x="1719" y="-100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xgi-cr-K82">
@@ -293,6 +307,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRK-n9-FhJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-223" y="256"/>
+        </scene>
+        <!--Connections APIs-->
+        <scene sceneID="5Qa-36-pca">
+            <objects>
+                <viewController id="VPq-db-Mhv" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MtH-wq-hfx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eTy-PK-uac">
+                                <rect key="frame" x="0.0" y="108" width="414" height="209"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xo-ma-ukd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title=" All Cashed Bank Connections"/>
+                                        <connections>
+                                            <action selector="showConnection:" destination="XuN-vA-xp7" eventType="touchUpInside" id="j3d-gp-wn5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="II5-8s-Def">
+                                        <rect key="frame" x="0.0" y="53" width="414" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Create Bank Connection By Parameters"/>
+                                        <connections>
+                                            <action selector="createConnection:" destination="VPq-db-Mhv" eventType="touchUpInside" id="3v3-dx-tZH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-Iw-VSI">
+                                        <rect key="frame" x="0.0" y="106" width="414" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Get Bank Connection Parameters"/>
+                                        <connections>
+                                            <action selector="getConnectionParameters:" destination="VPq-db-Mhv" eventType="touchUpInside" id="SFy-Yz-f9y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agf-ka-1lF">
+                                        <rect key="frame" x="0.0" y="159" width="414" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ytP-wh-UYu"/>
+                                        </constraints>
+                                        <state key="normal" title="Delete"/>
+                                        <connections>
+                                            <action selector="deleteConnection:" destination="VPq-db-Mhv" eventType="touchUpInside" id="HlT-ar-Iar"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rbq-ze-qMB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rbq-ze-qMB" firstAttribute="trailing" secondItem="eTy-PK-uac" secondAttribute="trailing" id="5bY-gJ-4hw"/>
+                            <constraint firstItem="eTy-PK-uac" firstAttribute="leading" secondItem="rbq-ze-qMB" secondAttribute="leading" id="OwE-Ks-4vS"/>
+                            <constraint firstItem="eTy-PK-uac" firstAttribute="top" secondItem="rbq-ze-qMB" secondAttribute="top" constant="20" id="je1-6L-AZu"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Connections APIs" id="L5D-5f-mbO">
+                        <barButtonItem key="rightBarButtonItem" title="Select Connection" id="45V-h9-gid">
+                            <connections>
+                                <action selector="showConnection:" destination="VPq-db-Mhv" id="hmZ-cq-bgW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kl-bC-gzt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="988"/>
         </scene>
     </scenes>
     <resources>
