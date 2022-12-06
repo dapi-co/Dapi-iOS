@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dapi-co/Dapi-iOS",
       "state" : {
-        "revision" : "14925e85938ccd9ee60cf18fa38bfc586c8f7560",
-        "version" : "1.1.0"
+        "revision" : "8847b2df622ffbcb6bc5ebf786a5ffa8d56cd391",
+        "version" : "2.0.0"
       }
     }
   ],

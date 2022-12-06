@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AC1F3522906AEA400F7F12C /* DapiSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC1F3512906AEA400F7F12C /* DapiSDK */; };
 		2AF061BF28EAEBA1005DAAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061BE28EAEBA1005DAAA5 /* AppDelegate.swift */; };
 		2AF061C128EAEBA1005DAAA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061C028EAEBA1005DAAA5 /* SceneDelegate.swift */; };
 		2AF061C328EAEBA1005DAAA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061C228EAEBA1005DAAA5 /* ViewController.swift */; };
@@ -17,6 +16,7 @@
 		2AF061D628EB09C4005DAAA5 /* ViewController+BankConnects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061D528EB09C4005DAAA5 /* ViewController+BankConnects.swift */; };
 		2AF061D828EB0A4F005DAAA5 /* ViewController+DataAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061D728EB0A4F005DAAA5 /* ViewController+DataAPIs.swift */; };
 		2AF061DA28EB0B69005DAAA5 /* ViewController+PaymentAPIs.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061D928EB0B69005DAAA5 /* ViewController+PaymentAPIs.swift.swift */; };
+		2AFD2931293FE67F00BD0FD6 /* DapiSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2AFD2930293FE67F00BD0FD6 /* DapiSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC1F3522906AEA400F7F12C /* DapiSDK in Frameworks */,
+				2AFD2931293FE67F00BD0FD6 /* DapiSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				2AC1F3512906AEA400F7F12C /* DapiSDK */,
+				2AFD2930293FE67F00BD0FD6 /* DapiSDK */,
 			);
 			productName = Example;
 			productReference = 2AF061BB28EAEBA1005DAAA5 /* Example.app */;
@@ -126,7 +126,7 @@
 			);
 			mainGroup = 2AF061B228EAEBA1005DAAA5;
 			packageReferences = (
-				2AC1F3502906AEA400F7F12C /* XCRemoteSwiftPackageReference "Dapi-iOS" */,
+				2AFD292F293FE67F00BD0FD6 /* XCRemoteSwiftPackageReference "Dapi-iOS" */,
 			);
 			productRefGroup = 2AF061BC28EAEBA1005DAAA5 /* Products */;
 			projectDirPath = "";
@@ -378,20 +378,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2AC1F3502906AEA400F7F12C /* XCRemoteSwiftPackageReference "Dapi-iOS" */ = {
+		2AFD292F293FE67F00BD0FD6 /* XCRemoteSwiftPackageReference "Dapi-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dapi-co/Dapi-iOS";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.1.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2AC1F3512906AEA400F7F12C /* DapiSDK */ = {
+		2AFD2930293FE67F00BD0FD6 /* DapiSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2AC1F3502906AEA400F7F12C /* XCRemoteSwiftPackageReference "Dapi-iOS" */;
+			package = 2AFD292F293FE67F00BD0FD6 /* XCRemoteSwiftPackageReference "Dapi-iOS" */;
 			productName = DapiSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
