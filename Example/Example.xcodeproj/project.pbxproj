@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AE05EED29A2B1B2009D2C6D /* DapiSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2AE05EEC29A2B1B2009D2C6D /* DapiSDK */; };
+		2A3E048029DDAC5200E0DF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E047F29DDAC5200E0DF42 /* Main.storyboard */; };
+		2A4771C129CB19A00003E98D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4771C029CB19A00003E98D /* AppDelegate.m */; };
+		2A4771C429CB19A00003E98D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4771C329CB19A00003E98D /* SceneDelegate.m */; };
+		2A4771C729CB19A00003E98D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4771C629CB19A00003E98D /* ViewController.m */; };
+		2A4771CC29CB19A10003E98D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4771CB29CB19A10003E98D /* Assets.xcassets */; };
+		2A4771CF29CB19A10003E98D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4771CD29CB19A10003E98D /* LaunchScreen.storyboard */; };
+		2A4771D229CB19A10003E98D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4771D129CB19A10003E98D /* main.m */; };
+		2A4771DC29CB1CB20003E98D /* DapiSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2A4771DB29CB1CB20003E98D /* DapiSDK */; };
 		2AF061BF28EAEBA1005DAAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061BE28EAEBA1005DAAA5 /* AppDelegate.swift */; };
 		2AF061C128EAEBA1005DAAA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061C028EAEBA1005DAAA5 /* SceneDelegate.swift */; };
 		2AF061C328EAEBA1005DAAA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061C228EAEBA1005DAAA5 /* ViewController.swift */; };
@@ -20,6 +27,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3E047F29DDAC5200E0DF42 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2A4771BD29CB19A00003E98D /* Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A4771BF29CB19A00003E98D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A4771C029CB19A00003E98D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A4771C229CB19A00003E98D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2A4771C329CB19A00003E98D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2A4771C529CB19A00003E98D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A4771C629CB19A00003E98D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A4771CB29CB19A10003E98D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A4771CE29CB19A10003E98D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A4771D029CB19A10003E98D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A4771D129CB19A10003E98D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AF061BB28EAEBA1005DAAA5 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF061BE28EAEBA1005DAAA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AF061C028EAEBA1005DAAA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,22 +53,56 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2A4771BA29CB19A00003E98D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A4771DC29CB1CB20003E98D /* DapiSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2AF061B828EAEBA1005DAAA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE05EED29A2B1B2009D2C6D /* DapiSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A4771BE29CB19A00003E98D /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E047F29DDAC5200E0DF42 /* Main.storyboard */,
+				2A4771BF29CB19A00003E98D /* AppDelegate.h */,
+				2A4771C029CB19A00003E98D /* AppDelegate.m */,
+				2A4771C229CB19A00003E98D /* SceneDelegate.h */,
+				2A4771C329CB19A00003E98D /* SceneDelegate.m */,
+				2A4771C529CB19A00003E98D /* ViewController.h */,
+				2A4771C629CB19A00003E98D /* ViewController.m */,
+				2A4771CB29CB19A10003E98D /* Assets.xcassets */,
+				2A4771CD29CB19A10003E98D /* LaunchScreen.storyboard */,
+				2A4771D029CB19A10003E98D /* Info.plist */,
+				2A4771D129CB19A10003E98D /* main.m */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		2A4771DD29CB1CD30003E98D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2AF061B228EAEBA1005DAAA5 = {
 			isa = PBXGroup;
 			children = (
 				2AF061BD28EAEBA1005DAAA5 /* Example */,
+				2A4771BE29CB19A00003E98D /* Objective-C */,
 				2AF061BC28EAEBA1005DAAA5 /* Products */,
+				2A4771DD29CB1CD30003E98D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				2AF061BB28EAEBA1005DAAA5 /* Example.app */,
+				2A4771BD29CB19A00003E98D /* Objective-C.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +135,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2A4771BC29CB19A00003E98D /* Objective-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A4771D329CB19A10003E98D /* Build configuration list for PBXNativeTarget "Objective-C" */;
+			buildPhases = (
+				2A4771B929CB19A00003E98D /* Sources */,
+				2A4771BA29CB19A00003E98D /* Frameworks */,
+				2A4771BB29CB19A00003E98D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Objective-C";
+			packageProductDependencies = (
+				2A4771DB29CB1CB20003E98D /* DapiSDK */,
+			);
+			productName = "Objective-C";
+			productReference = 2A4771BD29CB19A00003E98D /* Objective-C.app */;
+			productType = "com.apple.product-type.application";
+		};
 		2AF061BA28EAEBA1005DAAA5 /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AF061CF28EAEBA5005DAAA5 /* Build configuration list for PBXNativeTarget "Example" */;
@@ -95,7 +169,6 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				2AE05EEC29A2B1B2009D2C6D /* DapiSDK */,
 			);
 			productName = Example;
 			productReference = 2AF061BB28EAEBA1005DAAA5 /* Example.app */;
@@ -111,6 +184,9 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					2A4771BC29CB19A00003E98D = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					2AF061BA28EAEBA1005DAAA5 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -126,18 +202,29 @@
 			);
 			mainGroup = 2AF061B228EAEBA1005DAAA5;
 			packageReferences = (
-				2AE05EEB29A2B1B2009D2C6D /* XCRemoteSwiftPackageReference "Dapi-iOS" */,
+				2A4771DA29CB1CB20003E98D /* XCRemoteSwiftPackageReference "Dapi-iOS" */,
 			);
 			productRefGroup = 2AF061BC28EAEBA1005DAAA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2AF061BA28EAEBA1005DAAA5 /* Example */,
+				2A4771BC29CB19A00003E98D /* Objective-C */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2A4771BB29CB19A00003E98D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3E048029DDAC5200E0DF42 /* Main.storyboard in Resources */,
+				2A4771CF29CB19A10003E98D /* LaunchScreen.storyboard in Resources */,
+				2A4771CC29CB19A10003E98D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2AF061B928EAEBA1005DAAA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +238,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2A4771B929CB19A00003E98D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A4771C729CB19A00003E98D /* ViewController.m in Sources */,
+				2A4771C129CB19A00003E98D /* AppDelegate.m in Sources */,
+				2A4771D229CB19A10003E98D /* main.m in Sources */,
+				2A4771C429CB19A00003E98D /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2AF061B728EAEBA1005DAAA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +265,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2A4771CD29CB19A10003E98D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A4771CE29CB19A10003E98D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		2AF061C428EAEBA1005DAAA5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -186,6 +292,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2A4771D429CB19A10003E98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Objective-C/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = com.dapi.app;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dapi.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2A4771D529CB19A10003E98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Objective-C/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = com.dapi.app;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dapi.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		2AF061CD28EAEBA5005DAAA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -357,6 +527,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2A4771D329CB19A10003E98D /* Build configuration list for PBXNativeTarget "Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A4771D429CB19A10003E98D /* Debug */,
+				2A4771D529CB19A10003E98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2AF061B628EAEBA1005DAAA5 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -378,20 +557,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2AE05EEB29A2B1B2009D2C6D /* XCRemoteSwiftPackageReference "Dapi-iOS" */ = {
+		2A4771DA29CB1CB20003E98D /* XCRemoteSwiftPackageReference "Dapi-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dapi-co/Dapi-iOS";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 2.6.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2AE05EEC29A2B1B2009D2C6D /* DapiSDK */ = {
+		2A4771DB29CB1CB20003E98D /* DapiSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2AE05EEB29A2B1B2009D2C6D /* XCRemoteSwiftPackageReference "Dapi-iOS" */;
+			package = 2A4771DA29CB1CB20003E98D /* XCRemoteSwiftPackageReference "Dapi-iOS" */;
 			productName = DapiSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
